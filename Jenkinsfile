@@ -31,8 +31,8 @@ pipeline {
 
                     sh '''
                     echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                    docker tag flask_hello:latest fitiafenohajaun/flask_hello_jenkins:latest
-                    docker push fitiafenohajaun/flask_hello_jenkins:latest
+                    docker tag flask_hello:latest julieiarisoa/flask_hello_jenkins:latest
+                    docker push julieiarisoa/flask_hello_jenkins:latest
                     '''
                 }
             }

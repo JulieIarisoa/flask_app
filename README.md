@@ -219,7 +219,7 @@ contient la clé d'accès au cluster et ne doit jamais être commité.
 |-----------------------|-----------------|
 | **Test Flask**        | Installe les dépendances et lance `test.py` dans un conteneur `python:3.11` |
 | **Build Docker Image**| Construit l'image `flask_hello:latest` |
-| **Push Docker Hub**   | Pousse l'image `fitiafenohajaun/flask_hello_jenkins:latest` |
+| **Push Docker Hub**   | Pousse l'image `julieiarisoa/flask_hello_jenkins:latest` |
 | **Deploy Kubernetes** | Applique `k8s/` puis redémarre le déploiement pour récupérer la nouvelle image |
 
 L'étape de déploiement utilise `kubectl` dans un conteneur `alpine/k8s`, connecté au réseau
