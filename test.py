@@ -27,9 +27,6 @@ class TestHello(unittest.TestCase):
         rv = self.client.get('/feature')
         self.assertEqual(rv.status_code, 200)
 
-@app.route('/feature')
-def feature():
-    return 'Feature!\n'
-    
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

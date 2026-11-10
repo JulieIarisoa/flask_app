@@ -10,6 +10,10 @@ def hello_world():
 @app.route("/hello/<username>")
 def hello_user(username):
     return f"Hello {username}!\n"
+    
+@app.route('/feature')
+def feature():
+    return 'Feature!\n'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8090)
